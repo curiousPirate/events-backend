@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/search/*"
+  to = "https://letsgoparty-backend.netlify.app"
+  status = 200
+  force = true
