@@ -2,15 +2,10 @@
   publish = "dist"
   command = "npm run build"
 
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
-
-
 [[redirects]]
   from = "/search/*"
   to = "https://serpapi.com/:splat"
   status = 200
-  force = true
+  headers = { Access-Control-Allow-Origin = "*" }
+
 
