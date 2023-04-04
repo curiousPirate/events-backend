@@ -2,8 +2,8 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "/search/*"
-  to = "https://serpapi.com/:splat"
+  from = "/search"
+  to = "https://serpapi.com/search"
   status = 200
   headers = { Access-Control-Allow-Origin = "*" }
 
